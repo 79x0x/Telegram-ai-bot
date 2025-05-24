@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>XRON AI Bot Manager</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; background: #f2f2f2; }
+    h1 { color: #333; }
+    input, button { padding: 10px; margin: 5px 0; width: 100%; }
+    .bot-list { margin-top: 20px; }
+    .bot-item { background: #fff; padding: 10px; margin-bottom: 10px; border-left: 4px solid blue; }
+  </style>
+</head>
+<body>
+  <h1>XRON AI Bot Manager</h1>
+  <form id="botForm">
+    <input type="text" id="botName" placeholder="Bot Name" required />
+    <input type="text" id="telegramToken" placeholder="Telegram Bot Token" required />
+    <input type="text" id="openaiKey" placeholder="OpenAI API Key" required />
+    <button type="submit">Create Bot</button>
+  </form>
+
+  <div class="bot-list" id="botList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
